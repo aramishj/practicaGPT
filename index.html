@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Colombiano Gourmet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Restaurante Colombiano Gourmet</h1>
+        <nav id="encabezado">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+            </label>
+        <!-- <nav> -->
+            <ul class="lista">
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#reservation">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Sabores Auténticos de Colombia</h1>
+        <p>Explora la riqueza culinaria de nuestro país en cada plato</p>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Nuestro Menú Especial</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Bandeja Paisa</h3>
+                <p>Un plato completo con arroz, frijoles, chicharrón, carne molida, plátano, y más.</p>
+                <p><strong>$18.00</strong></p>
+            </div>
+            <div class="menu-item">
+                <h3>Ajiaco Santafereño</h3>
+                <p>Deliciosa sopa con pollo, papas, maíz y guascas. ¡Un clásico de Bogotá!</p>
+                <p><strong>$15.00</strong></p>
+            </div>
+            <div class="menu-item">
+                <h3>Sancocho de Pescado</h3>
+                <p>Exquisito caldo con pescado fresco, plátano, yuca y cilantro.</p>
+                <p><strong>$17.00</strong></p>
+            </div>
+            <div class="menu-item">
+                <h3>Arepas con Hogao</h3>
+                <p>Tradicionales arepas con hogao, perfectas para acompañar cualquier plato.</p>
+                <p><strong>$8.00</strong></p>
+            </div>
+            <div class="menu-item">
+                <h3>Postre de Tres Leches</h3>
+                <p>Un postre suave y dulce que combina leche, crema y leche condensada.</p>
+                <p><strong>$7.00</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Galería de Platos Típicos Colombianos</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="https://media.istockphoto.com/id/1403864889/es/foto/bandeja-paisa-plato-principal-t%C3%ADpico-colombiano-gastronom%C3%ADa-de-antioquia.jpg?s=612x612&w=0&k=20&c=fNBaH7i9c_OQeMkv43stnfWu1yyCx4egYeqGoTfXBZg=" alt="Bandeja Paisa"></div>
+            <div class="gallery-item"><img src="https://polloseldorado.co/wp-content/uploads/2023/08/ajiaco.jpg" alt="Ajiaco Santafereño"></div>
+            <div class="gallery-item"><img src="https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP3814079A-h-o.jpg" alt="Sancocho de Pescado"></div>
+            <div class="gallery-item"><img src="https://alimentoslaisabela.com/wp-content/uploads/2024/02/RECETA-3-e1707511117714.jpeg" alt="Arepas con Hogao"></div>
+            <div class="gallery-item"><img src="https://images.mrcook.app/recipe-image/01912b21-00bd-7dff-89bb-b50aa62fa485" alt="Postre de Tres Leches"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contacto</h2>
+        <p>Teléfono: +123 456 7890 | Email: contacto@colombianogourmet.com</p>
+        <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+    </section>
+
+    <section id="reservation" class="section">
+        <h2>Reservas</h2>
+        <form action="reservar.php" method="POST">
+            <input type="text" name="name" placeholder="Nombre Completo" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="date" name="date" required>
+            <textarea name="message" placeholder="Mensaje o requerimientos especiales"></textarea>
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restaurante Colombiano Gourmet. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
